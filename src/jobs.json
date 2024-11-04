@@ -8,7 +8,8 @@
         "description": "You will be expected to develop and maintain the best Mobile apps at RahaNet ISP.",
         "salary": "$2500/month",
         "category": "software",
-        "applyLink": "./More.html"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"2",
@@ -19,7 +20,8 @@
         "description": "Responsible for managing and maintaining our database systems.",
         "salary": "$3000/month",
         "category": "database",
-        "applyLink": "https://example.com/apply-database-admin"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"3",
@@ -30,7 +32,8 @@
         "description": "Design and improve user experiences for our platform.",
         "salary": "$2000/month",
         "category": "ui-ux",
-        "applyLink": "https://example.com/apply-ui-ux-designer"
+       "applyLink": "./More.html",
+       "image": "../assets/img/logo.svg"
     },
     {
         "id":"4",
@@ -41,7 +44,8 @@
         "description": "Work on cutting-edge software solutions for our clients.",
         "salary": "$3500/month",
         "category": "software",
-        "applyLink": "https://example.com/apply-software-engineer"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"5",
@@ -52,7 +56,8 @@
         "description": "Lead the development and maintenance of our software products.",
         "salary": "$4000/month",
         "category": "software",
-        "applyLink": "https://example.com/apply-senior-software-engineer"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"6",
@@ -63,7 +68,8 @@
         "description": "Work on the next generation of user experiences for our platform.",
         "salary": "$3500/month",
         "category": "ui-ux",
-        "applyLink": "https://example.com/apply-senior-ui-ux-designer"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"7",
@@ -74,7 +80,8 @@
         "description": "Lead the management and maintenance of our database systems.",
         "salary": "$4000/month",
         "category": "database",
-        "applyLink": "https://example.com/apply-senior-database-admin"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"8",
@@ -85,7 +92,8 @@
         "description": "Lead the development and maintenance of our frontend products.",
         "salary": "$4500/month",
         "category": "frontend",
-        "applyLink": "https://example.com/apply-senior-software-engineer"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"9",
@@ -96,7 +104,8 @@
         "description": "Lead the development and maintenance of our backend products.",
         "salary": "$4500/month",
         "category": "backend",
-        "applyLink": "https://example.com/apply-senior-backend-developer"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"10",
@@ -107,7 +116,8 @@
         "description": "Lead the development and maintenance of our user experiences.",
         "salary": "$4000/month",
         "category": "frontend",
-        "applyLink": "https://example.com/apply-senior-ui-ux-designer"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     },
     {
         "id":"11",
@@ -118,7 +128,8 @@
         "description": "Lead the development and maintenance of our backend systems.",
         "salary": "$4000/month",
         "category": "backend",
-        "applyLink": "https://example.com/apply-senior-backend-developer"
+        "applyLink": "./More.html",
+        "image": "../assets/img/logo.svg"
     }
   
 ]

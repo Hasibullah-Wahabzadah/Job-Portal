@@ -1,44 +1,28 @@
-.primary{
-
-    background-color:#1f5abf ;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.text-p{
-    color: #1f5abf;
-}
-
-.button2 {
-    width:16%;
-    height: 50px;
-    font-size: large;
-    background-color: #1f5abf; 
-    color: white; 
-    border: 2px solid #1f5abf;
-    ;
-  }
-.button3 {
-    width:12%;
-    height: 50px;
-    font-size: large;
-    background-color: #1f5abf; 
-    color: white; 
-    border: 2px solid #1f5abf;
-    ;
-  }
-  
-  /* .button2:hover {
-    background-color: #1f5abf;
-    color: white;
-  } */
+/* font  */
 .roboto-medium {
     font-family: "Roboto", serif;
     font-weight: 500;
     font-style: normal;
   }
+/* navbar */
+ul , li ,a {
+  font-size: 22px;
+  gap: 9px;
+
+}
+ /* Home  */
+ 
+.serachBox {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+}
 
 .intro{
-    background-image: url(../img/Group\ 1126.svg);
-    background-repeat: no-repeat;
-    background-position: 650px;
-    /* background-size: cover; */
-    background-clip: border-box;
+  
+    background: url(../img/Group\ 1126.svg) 640px no-repeat border-box ;
 }

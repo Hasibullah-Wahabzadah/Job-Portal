@@ -20,6 +20,10 @@
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
@@ -27,9 +31,9 @@
     />
   </head>
   <body class="">
-    <!-- navbar -->
+    <!-- Navbar -->
     <div class="container mt-4">
-      <nav class="navbar navbar-expand-lg primary rounded-3 px-3 py-2 fixed">
+      <nav class="navbar navbar-expand-lg bg-primary rounded-3 px-3 py-2 fixed">
         <div class="container-fluid">
           <a
             class="navbar-brand text-white fw-bold d-flex align-items-center"
@@ -84,157 +88,144 @@
         </div>
       </nav>
     </div>
-    <!-- Home -->
-    <section class="intro">
-      <div>
-        <div class="container my-4">
-          <!-- Hero Section -->
-          <div class="row align-items-center">
-            <!-- Text Content -->
-            <div class="col-lg-8">
-              <h1 class="fw-bold display-1">
-                GET THE RIGHT JOB <br />
-                YOU <span class="text-p">DESERVE</span>
-              </h1>
-              <p class="text-muted mt-5">
-                Great platform for the job seekers that searching for new career
-                heights and passionate about startups.
-              </p>
 
-              <!-- Search Box -->
-              <div
-                class="input-group mt-5 p-3 shadow-sm rounded"
-                style="max-width: 640px; width: 100%"
-              >
-                <span class="input-group-text bg-white border-0"
-                  ><i class="bi bi-search"></i
-                ></span>
-                <input
-                  type="text"
-                  class="form-control border-0"
-                  placeholder="Search jobs..."
-                />
-                <button class="button2 rounded btn-lg">Search</button>
-              </div>
-            </div>
-
-            <!-- Image Section -->
-            <div class="col-lg-4 justify-content-center">
-              <img
-                src="../assets/img/photo.svg"
-                alt="Person Image"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <!-- Statistics Section -->
-          <div class="row text-center mt-5 py-2 primary rounded">
-            <div class="col-lg-3" style="border-right: 2px solid white">
-              <div class="text-white p-4">
-                <h3>3000+</h3>
-                <p>Live Jobs</p>
-              </div>
-            </div>
-            <div class="col-lg-3" style="border-right: 2px solid white">
-              <div class="text-white p-4">
-                <h3>5000+</h3>
-                <p>Daily Job Post</p>
-              </div>
-            </div>
-            <div class="col-lg-3" style="border-right: 2px solid white">
-              <div class="text-white p-4">
-                <h3>34000+</h3>
-                <p>People Get Hired</p>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="text-white p-4">
-                <h3>1000+</h3>
-                <p>Companies</p>
-              </div>
-            </div>
-          </div>
+<!-- Home Section -->
+<section class="intro">
+  <div class="container my-4">
+    <div class="row align-items-center">
+      <div class="col-lg-8 text-center text-lg-start">
+        <h1 class="fw-bold display-1">
+          GET THE RIGHT JOB <br />
+          YOU <span class="text-primary">DESERVE</span>
+        </h1>
+        <p class="text-muted mt-5">
+          Great platform for job seekers looking for new career heights and passionate about startups.
+        </p>
+        <!-- Search Box -->
+        <div class="input-group mt-5 p-3 searchBox rounded" style="max-width: 640px; width: 100%">
+          <span class="input-group-text bg-white border-0"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control border-0" placeholder="Search jobs..." />
+          <button class="btn btn-primary rounded btn-lg">Search</button>
         </div>
       </div>
-    </section>
-
-    <!-- Job section  -->
-
-    <div class="container my-5">
-      <!-- title and subtitle-->
-      <div class="text-center mb-4">
-          <h2>فرصت‌های شغلی</h2>
-          <p>برای مشاهده و درخواست شغل مورد نظر خود، دسته‌بندی را انتخاب کنید و سپس بر روی درخواست کلیک کنید.</p>
+      <!-- Image Section -->
+      <div class="col-lg-4 text-center">
+        <img src="../assets/img/photo.svg" alt="Person Image" class="img-fluid" />
       </div>
-  
-      <!-- buttons-->
-      <div class="d-flex justify-content-center mb-4">
-          <button class="btn btn-primary mx-2" onclick="filterJobs('all')">All</button>
-          <button class="btn btn-primary mx-2" onclick="filterJobs('software')">Software</button>
-          <button class="btn btn-primary mx-2" onclick="filterJobs('database')">Database</button>
-          <button class="btn btn-primary mx-2" onclick="filterJobs('ui-ux')">UI - UX</button>
-          <button class="btn btn-primary mx-2" onclick="filterJobs('frontend')">Frontend</button>
-          <button class="btn btn-primary mx-2" onclick="filterJobs('backend')">Backend</button>
+    </div>
+    <!-- Statistics Section -->
+    <div class="row text-center mt-4 py-2 bg-primary rounded">
+      <div class="col-6 col-md-3 border-end border-white">
+        <div class="text-white p-4">
+          <h3>3000+</h3>
+          <p>Live Jobs</p>
+        </div>
       </div>
-  
-      <!-- list jobs-->
-      <div class="row row-cols-1 row-cols-md-3 g-4" id="job-list">
-          <!-- کارت‌های شغلی به صورت پویا در اینجا اضافه می‌شوند -->
+      <div class="col-6 col-md-3 border-end border-white">
+        <div class="text-white p-4">
+          <h3>5000+</h3>
+          <p>Daily Job Posts</p>
+        </div>
       </div>
-  
-      <!-- button >> "Show more" -->
-      <div class="text-center mt-4">
-          <button class="btn btn-primary">Show more</button>
+      <div class="col-6 col-md-3 border-end border-white">
+        <div class="text-white p-4">
+          <h3>34000+</h3>
+          <p>People Hired</p>
+        </div>
       </div>
+      <div class="col-6 col-md-3">
+        <div class="text-white p-4">
+          <h3>1000+</h3>
+          <p>Companies</p>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <script>
-      let jobsData = []; // آرایه‌ای برای ذخیره اطلاعات شغلی
-  
-      // دریافت داده‌ها از فایل JSON
+</section>
+
+<!-- Job Section -->
+<div class="container my-5">
+  <!-- Title and Subtitle -->
+  <div class="text-center mb-4">
+    <h2 class="mb-4">Job Opportunities</h2>
+    <p class="mb-4">To view and apply for your desired job, select a category and then click on apply.</p>
+  </div>
+  <!-- Buttons -->
+  <div class="row mb-4">
+    <div class="col-12 d-flex flex-wrap justify-content-center gap-2">
+      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('all')">All</button>
+      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('software')">Software</button>
+      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('database')">Database</button>
+      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('ui-ux')">UI - UX</button>
+      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('frontend')">Frontend</button>
+      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('backend')">Backend</button>
+    </div>
+  </div>
+  <!-- List Jobs -->
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="job-list">
+    <!-- Dynamic job cards will be added here -->
+  </div>
+  <!-- Show More Button -->
+  <div class="text-center mt-4">
+    <button class="btn btn-primary">Show more</button>
+  </div>
+</div>
+    
+    <script>
+      let jobsData = [];
+
       async function loadJobs() {
-          const response = await fetch('jobs.json'); // فایل JSON باید در همین دایرکتوری باشد
-          jobsData = await response.json();
-          displayJobs('all');
+        const response = await fetch("jobs.json"); 
+        jobsData = await response.json();
+        displayJobs("all");
       }
-  
+
       // نمایش شغل‌ها بر اساس دسته‌بندی
       function displayJobs(category) {
-          const jobList = document.getElementById('job-list');
-          jobList.innerHTML = ''; // پاک کردن شغل‌های موجود
-  
-          // فیلتر کردن و اضافه کردن کارت‌های شغلی
-          const filteredJobs = category === 'all' ? jobsData : jobsData.filter(job => job.category === category);
-  
-          filteredJobs.forEach(job => {
-              const jobCard = document.createElement('div');
-              jobCard.className = 'col job-card';
-              jobCard.innerHTML = `
-                  <div class="card h-100">
-                      <div class="card-body">
-                          <h6 class="card-title">${job.company}</h6>
-                          <p class="text-muted">${job.location}</p>
-                          <h5>${job.title}</h5>
-                          <p class="text-muted">${job.type}</p>
-                          <p class="card-text">${job.description}</p>
-                          <p class="fw-bold">${job.salary}</p>
-                          <a href="More.html?id=${job.id}" target="_blank" class="btn btn-primary">Apply Now</a>
-                      </div>
-                  </div>
+        const jobList = document.getElementById("job-list");
+        jobList.innerHTML = ""; // پاک کردن شغل‌های موجود
+
+        // فیلتر کردن و اضافه کردن کارت‌های شغلی
+        const filteredJobs =
+          category === "all"
+            ? jobsData
+            : jobsData.filter((job) => job.category === category);
+
+        filteredJobs.forEach((job) => {
+          const jobCard = document.createElement("div");
+          jobCard.className = "col job-card";
+          jobCard.innerHTML = `
+                  <div class="card h-100 p-4" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff;">
+                    <div class="card-body">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <img src="${job.image}" alt="${job.title}" style="width: 40px; height: 40px; object-fit: contain; margin-right: 10px;">
+                            <div>
+                                <h6 class="card-title" style="font-weight: bold; font-size: 14px; margin: 0; color: #333;">${job.company}</h6>
+                                <p class="text-muted" style="font-size: 12px; margin: 0; color: #666;">${job.location}</p>
+                            </div>
+                        </div>
+                        <h5 style="font-size: 18px; font-weight: bold; margin-top: 10px; color: #000;">${job.title}</h5>
+                        <p class="text-muted" style="font-size: 14px; margin-top: 5px;">${job.type}</p>
+                        <p class="card-text" style="font-size: 14px; color: #666;">${job.description}</p>
+                       <div style="display: flex; align-items: center;>
+                         <p class="fw-bold" style="font-size: 18px; color: #000;">${job.salary}</p>
+                        <a href="More.html?id=${job.id}"  class="btn btn-primary"  style="margin-left: 130px; background-color: ">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
               `;
-              jobList.appendChild(jobCard);
-          });
+          jobList.appendChild(jobCard);
+        });
       }
-  
+
       // تابع برای فیلتر کردن شغل‌ها با توجه به دکمه
       function filterJobs(category) {
-          displayJobs(category);
+        displayJobs(category);
       }
-  
+
       // بارگذاری شغل‌ها هنگام بارگذاری صفحه
       loadJobs();
-  </script>
+    </script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
