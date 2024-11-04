@@ -17,12 +17,11 @@ ul , li ,a {
 }
  /* Home  */
  
-.serachBox {
+.searchBox {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
 }
 
 .intro{
-  
-    background: url(../img/Group\ 1126.svg) 640px no-repeat border-box ;
+      background: url(../images/Group\ 1126.svg) 640px no-repeat border-box ;
 }
