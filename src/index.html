@@ -93,7 +93,7 @@
 <section class="intro">
   <div class="container my-4">
     <div class="row align-items-center">
-      <div class="col-lg-8 text-center text-lg-start">
+      <div class="col-lg-8  text-lg-start">
         <h1 class="fw-bold display-1">
           GET THE RIGHT JOB <br />
           YOU <span class="text-primary">DESERVE</span>
@@ -153,12 +153,12 @@
   <!-- Buttons -->
   <div class="row mb-4">
     <div class="col-12 d-flex flex-wrap justify-content-center gap-2">
-      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('all')">All</button>
-      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('software')">Software</button>
-      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('database')">Database</button>
-      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('ui-ux')">UI - UX</button>
-      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('frontend')">Frontend</button>
-      <button class="btn btn-primary col-2 col-md-1" onclick="filterJobs('backend')">Backend</button>
+      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('all')">All</button>
+      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('software')">Software</button>
+      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('database')">Database</button>
+      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('ui-ux')">UI - UX</button>
+      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('frontend')">Frontend</button>
+      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('backend')">Backend</button>
     </div>
   </div>
   <!-- List Jobs -->
@@ -167,65 +167,78 @@
   </div>
   <!-- Show More Button -->
   <div class="text-center mt-4">
-    <button class="btn btn-primary">Show more</button>
+    <button id="show-more-btn" class="btn btn-primary" onclick="showMoreJobs()">Show more</button>
   </div>
 </div>
-    
-    <script>
-      let jobsData = [];
 
-      async function loadJobs() {
-        const response = await fetch("jobs.json"); 
-        jobsData = await response.json();
-        displayJobs("all");
-      }
+<script>
+  let jobsData = [];
+  let displayedJobs = 0;
+  const initialJobsToShow = window.innerWidth < 768 ? 3 : 6; // 3 on mobile, 6 on larger screens
 
-      // نمایش شغل‌ها بر اساس دسته‌بندی
-      function displayJobs(category) {
-        const jobList = document.getElementById("job-list");
-        jobList.innerHTML = ""; // پاک کردن شغل‌های موجود
+  async function loadJobs() {
+    const response = await fetch("jobs.json");
+    jobsData = await response.json();
+    displayJobs("all");
+  }
 
-        // فیلتر کردن و اضافه کردن کارت‌های شغلی
-        const filteredJobs =
-          category === "all"
-            ? jobsData
-            : jobsData.filter((job) => job.category === category);
+  // Display jobs based on category and limit
+  function displayJobs(category, limit = initialJobsToShow) {
+    const jobList = document.getElementById("job-list");
+    jobList.innerHTML = ""; // Clear current job cards
 
-        filteredJobs.forEach((job) => {
-          const jobCard = document.createElement("div");
-          jobCard.className = "col job-card";
-          jobCard.innerHTML = `
-                  <div class="card h-100 p-4" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff;">
-                    <div class="card-body">
-                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
-                            <img src="${job.image}" alt="${job.title}" style="width: 40px; height: 40px; object-fit: contain; margin-right: 10px;">
-                            <div>
-                                <h6 class="card-title" style="font-weight: bold; font-size: 14px; margin: 0; color: #333;">${job.company}</h6>
-                                <p class="text-muted" style="font-size: 12px; margin: 0; color: #666;">${job.location}</p>
-                            </div>
-                        </div>
-                        <h5 style="font-size: 18px; font-weight: bold; margin-top: 10px; color: #000;">${job.title}</h5>
-                        <p class="text-muted" style="font-size: 14px; margin-top: 5px;">${job.type}</p>
-                        <p class="card-text" style="font-size: 14px; color: #666;">${job.description}</p>
-                       <div style="display: flex; align-items: center;>
-                         <p class="fw-bold" style="font-size: 18px; color: #000;">${job.salary}</p>
-                        <a href="More.html?id=${job.id}"  class="btn btn-primary"  style="margin-left: 130px; background-color: ">Apply Now</a>
-                        </div>
-                    </div>
-                </div>
-              `;
-          jobList.appendChild(jobCard);
-        });
-      }
+    // Filter and limit job cards
+    const filteredJobs =
+      category === "all"
+        ? jobsData.slice(0, limit)
+        : jobsData.filter((job) => job.category === category).slice(0, limit);
 
-      // تابع برای فیلتر کردن شغل‌ها با توجه به دکمه
-      function filterJobs(category) {
-        displayJobs(category);
-      }
+    filteredJobs.forEach((job) => {
+      const jobCard = document.createElement("div");
+      jobCard.className = "col job-card";
+      jobCard.innerHTML = `
+        <div class="card h-100 p-4" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff;">
+          <div class="card-body">
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+              <img src="${job.image}" alt="${job.title}" style="width: 40px; height: 40px; object-fit: contain; margin-right: 10px;">
+              <div>
+                <h6 class="card-title" style="font-weight: bold; font-size: 14px; margin: 0; color: #333;">${job.company}</h6>
+                <p class="text-muted" style="font-size: 12px; margin: 0; color: #666;">${job.location}</p>
+              </div>
+            </div>
+            <h5 style="font-size: 18px; font-weight: bold; margin-top: 10px; color: #000;">${job.title}</h5>
+            <p class="text-muted" style="font-size: 14px; margin-top: 5px;">${job.type}</p>
+            <p class="card-text" style="font-size: 14px; color: #666;">${job.description}</p>
+            <div style="display: flex; align-items: center;">
+              <p class="fw-bold" style="font-size: 18px; color: #000;">${job.salary}</p>
+              <a href="More.html?id=${job.id}" class="btn btn-primary ms-auto">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      `;
+      jobList.appendChild(jobCard);
+    });
 
-      // بارگذاری شغل‌ها هنگام بارگذاری صفحه
-      loadJobs();
-    </script>
+    // Update displayed job count and toggle Show More button
+    displayedJobs = limit;
+    document.getElementById("show-more-btn").style.display =
+      displayedJobs >= jobsData.length ? "none" : "inline-block";
+  }
+
+  // Filter jobs by category and reset the displayed job count
+  function filterJobs(category) {
+    displayJobs(category, initialJobsToShow);
+  }
+
+  // Show more jobs when the button is clicked
+  function showMoreJobs() {
+    displayJobs("all", jobsData.length);
+  }
+
+  // Load jobs on page load
+  loadJobs();
+</script>
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
