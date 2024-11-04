@@ -3,7 +3,7 @@ let jobsData = [];
   const initialJobsToShow = window.innerWidth < 768 ? 3 : 6; // 3 on mobile, 6 on larger screens
 
   async function loadJobs() {
-    const response = await fetch("jobs.json");
+    const response = await fetch("/public/jobs.json");
     jobsData = await response.json();
     displayJobs("all");
   }

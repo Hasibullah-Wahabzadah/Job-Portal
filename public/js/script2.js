@@ -4,7 +4,7 @@ const jobId = urlParams.get('id');
 
 // تابع برای دریافت اطلاعات شغلی و نمایش آن
 async function loadJobDetails() {
-    const response = await fetch('jobs.json');
+    const response = await fetch('/public/jobs.json');
     const jobsData = await response.json();
     const job = jobsData.find(j => j.id === jobId);
 
