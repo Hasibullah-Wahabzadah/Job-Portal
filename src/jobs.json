@@ -1,0 +1,124 @@
+[
+    {
+        "id": "1",
+        "company": "RahaNet ISP Company",
+        "location": "Herat, Afghanistan",
+        "title": "Senior Flutter Developer",
+        "type": "Full-time | On-site",
+        "description": "You will be expected to develop and maintain the best Mobile apps at RahaNet ISP.",
+        "salary": "$2500/month",
+        "category": "software",
+        "applyLink": "./More.html"
+    },
+    {
+        "id":"2",
+        "company": "DataTech Solutions",
+        "location": "Herat, Afghanistan",
+        "title": "Database Administrator",
+        "type": "Full-time | Remote",
+        "description": "Responsible for managing and maintaining our database systems.",
+        "salary": "$3000/month",
+        "category": "database",
+        "applyLink": "https://example.com/apply-database-admin"
+    },
+    {
+        "id":"3",
+        "company": "Creative Designs Inc.",
+        "location": "Herat, Afghanistan",
+        "title": "UI/UX Designer",
+        "type": "Part-time | Remote",
+        "description": "Design and improve user experiences for our platform.",
+        "salary": "$2000/month",
+        "category": "ui-ux",
+        "applyLink": "https://example.com/apply-ui-ux-designer"
+    },
+    {
+        "id":"4",
+        "company": "TechGenius Solutions",
+        "location": "Herat, Afghanistan",
+        "title": "Software Engineer",
+        "type": "Full-time | Remote",
+        "description": "Work on cutting-edge software solutions for our clients.",
+        "salary": "$3500/month",
+        "category": "software",
+        "applyLink": "https://example.com/apply-software-engineer"
+    },
+    {
+        "id":"5",
+        "company": "Global Tech Solutions",
+        "location": "Herat, Afghanistan",
+        "title": "Senior Software Engineer",
+        "type": "Full-time | Remote",
+        "description": "Lead the development and maintenance of our software products.",
+        "salary": "$4000/month",
+        "category": "software",
+        "applyLink": "https://example.com/apply-senior-software-engineer"
+    },
+    {
+        "id":"6",
+        "company": "Creative Designs Inc.",
+        "location": "Herat, Afghanistan",
+        "title": "Senior UI/UX Designer",
+        "type": "Full-time | Remote",
+        "description": "Work on the next generation of user experiences for our platform.",
+        "salary": "$3500/month",
+        "category": "ui-ux",
+        "applyLink": "https://example.com/apply-senior-ui-ux-designer"
+    },
+    {
+        "id":"7",
+        "company": "DataTech Solutions",
+        "location": "Herat, Afghanistan",
+        "title": "Senior Database Administrator",
+        "type": "Full-time | Remote",
+        "description": "Lead the management and maintenance of our database systems.",
+        "salary": "$4000/month",
+        "category": "database",
+        "applyLink": "https://example.com/apply-senior-database-admin"
+    },
+    {
+        "id":"8",
+        "company": "TechGenius Solutions",
+        "location": "Herat, Afghanistan",
+        "title": "Senior frontend Developer",
+        "type": "Full-time | Remote",
+        "description": "Lead the development and maintenance of our frontend products.",
+        "salary": "$4500/month",
+        "category": "frontend",
+        "applyLink": "https://example.com/apply-senior-software-engineer"
+    },
+    {
+        "id":"9",
+        "company": "Global Tech Solutions",
+        "location": "Herat, Afghanistan",
+        "title": "Senior backend Developer",
+        "type": "Full-time | Remote",
+        "description": "Lead the development and maintenance of our backend products.",
+        "salary": "$4500/month",
+        "category": "backend",
+        "applyLink": "https://example.com/apply-senior-backend-developer"
+    },
+    {
+        "id":"10",
+        "company": "Creative Designs Inc.",
+        "location": "Herat, Afghanistan",
+        "title": "Senior frontend Developer",
+        "type": "Full-time | Remote",
+        "description": "Lead the development and maintenance of our user experiences.",
+        "salary": "$4000/month",
+        "category": "frontend",
+        "applyLink": "https://example.com/apply-senior-ui-ux-designer"
+    },
+    {
+        "id":"11",
+        "company": "TechGenius Solutions",
+        "location": "Herat, Afghanistan",
+        "title": "Senior backend Developer",
+        "type": "Full-time | Remote",
+        "description": "Lead the development and maintenance of our backend systems.",
+        "salary": "$4000/month",
+        "category": "backend",
+        "applyLink": "https://example.com/apply-senior-backend-developer"
+    }
+  
+]

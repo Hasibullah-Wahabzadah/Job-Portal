@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+</head>
+<body>
+    <div id="job-details">
+        <!-- اطلاعات شغل در اینجا نمایش داده خواهد شد -->
+    </div>
+
+    <script>
+        // دریافت پارامتر id از URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const jobId = urlParams.get('id');
+
+        // تابع برای دریافت اطلاعات شغلی و نمایش آن
+        async function loadJobDetails() {
+            const response = await fetch('jobs.json');
+            const jobsData = await response.json();
+            const job = jobsData.find(j => j.id === jobId);
+
+            if (job) {
+                document.getElementById('job-details').innerHTML = `
+                    <h2>${job.title}</h2>
+                    <h4>${job.company}</h4>
+                    <p><strong>Location:</strong> ${job.location}</p>
+                    <p><strong>Type:</strong> ${job.type}</p>
+                    <p><strong>Description:</strong> ${job.description}</p>
+                    <p><strong>Salary:</strong> ${job.salary}</p>
+                `;
+            } else {
+                document.getElementById('job-details').innerHTML = '<p>Job not found.</p>';
+            }
+        }
+
+        loadJobDetails();
+    </script>
+</body>
+</html>
