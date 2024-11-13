@@ -1,8 +1,8 @@
-// دریافت پارامتر id از URL
+
 const urlParams = new URLSearchParams(window.location.search);
 const jobId = urlParams.get('id');
 
-// تابع برای دریافت اطلاعات شغلی و نمایش آن
+
 async function loadJobDetails() {
     const response = await fetch('/public/jobs.json');
     const jobsData = await response.json();
