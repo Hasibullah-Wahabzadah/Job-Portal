@@ -25,3 +25,89 @@ ul , li ,a {
 .intro{
       background: url(../images/Group\ 1126.svg) 640px no-repeat border-box ;
 }
+
+
+/* About */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.job-portal-section {
+  display: flex;
+  align-items: center;
+  background-color: #1e3a8a; /* Blue background */
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.image {
+  flex: 1;position: relative;
+  display: flex;
+  padding: 0px;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 10px;
+
+  
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #1e3a8a;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .job-portal-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .buttons {
+    justify-content: center;
+  }
+}
