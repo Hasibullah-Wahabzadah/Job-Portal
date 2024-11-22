@@ -34,7 +34,7 @@ let jobsData = [];
             </div>
             <h5 style="font-size: 18px; font-weight: bold; margin-top: 10px; color: #000;">${job.title}</h5>
             <p class="text-muted" style="font-size: 14px; margin-top: 5px;">${job.type}</p>
-            <p class="card-text" style="font-size: 14px; color: #666;">${job.description}</p>
+            <p class="card-text" style="font-size: 14px; color: #666;  display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">${job.description}</p>
             <div style="display: flex; align-items: center;">
               <p class="fw-bold" style="font-size: 18px; color: #000;">${job.salary}</p>
               <a href="More.html?id=${job.id}" class="btn btn-primary ms-auto">Apply Now</a>
