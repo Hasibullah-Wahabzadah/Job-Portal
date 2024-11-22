@@ -288,7 +288,7 @@ color: orange;
 }
 
 
-/* contact */
+/* --------------------contact-------------------- */
 
 .container4 {
   max-width: 1300px; 
@@ -401,16 +401,15 @@ ul li span:last-child {
 }
 
 
-/* Footer */
+/* --------------------Footer-------------------- */
 
 .footer {
-  background-color: #3B3BE8;
+  margin-top: 120px;
+  background-color: #4c6ef5;
   color: #fff;
-  font-family: Arial, sans-serif;
   padding: 40px 20px;
 }
 
-/* Main content */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -435,14 +434,8 @@ ul li span:last-child {
 
 .logo-icon {
   display: inline-block;
-  background-color: #fff;
-  color: #3B3BE8;
-  border-radius: 50%;
   width: 35px;
   height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 10px;
 }
 
@@ -526,10 +519,9 @@ ul li span:last-child {
 
 .back-to-top:hover {
   background-color: #fff;
-  color: #3B3BE8;
+  color: #4c6ef5;
 }
 
-/* Spacing between sections */
 .footer-content > div {
   margin-bottom: 10px; 
 }
