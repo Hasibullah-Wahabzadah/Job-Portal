@@ -403,7 +403,6 @@ ul li span:last-child {
 
 /* Footer */
 
-/* Footer styles */
 .footer {
   background-color: #3B3BE8;
   color: #fff;
@@ -417,9 +416,9 @@ ul li span:last-child {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 20px; /* کاهش فاصله بین ستون‌ها */
-  max-width: 1200px; /* محدود کردن عرض برای نزدیک‌تر کردن بخش‌ها */
-  margin: 0 auto; /* مرکز کردن محتوا */
+  gap: 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .footer-logo {
@@ -454,12 +453,12 @@ ul li span:last-child {
 
 .footer-links {
   flex: 1;
-  max-width: 180px; /* کاهش عرض برای نزدیک‌تر شدن ستون‌ها */
+  max-width: 180px;
 }
 
 .footer-links h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px; /* کاهش فاصله زیر تیترها */
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -469,7 +468,7 @@ ul li span:last-child {
 }
 
 .footer-links li {
-  margin-bottom: 8px; /* کاهش فاصله بین آیتم‌های لیست */
+  margin-bottom: 8px; 
 }
 
 .footer-links a {
@@ -485,32 +484,32 @@ ul li span:last-child {
 
 .footer-contact {
   flex: 1;
-  max-width: 180px; /* کاهش عرض برای تراز بهتر */
+  max-width: 180px;
 }
 
 .footer-contact p {
-  margin-bottom: 8px; /* کاهش فاصله بین خطوط */
+  margin-bottom: 8px; 
   font-size: 1rem;
 }
 
 .footer-divider {
   border: 0.5px solid rgba(255, 255, 255, 0.5);
-  max-width: 1200px; /* عرض محدود مشابه container */
-  margin: 10px auto; /* مرکز کردن خط */
+  max-width: 1200px; 
+  margin: 10px auto; 
 }
 
 .footer-bottom {
-  max-width: 1200px; /* عرض محدود مشابه container */
+  max-width: 1200px; 
   display: flex;
   justify-content: space-between;
-  align-items: center; /* اضافه کردن جهت عمودی برای تراز کردن محتوا */
-  margin: 0 auto; /* وسط‌چین کردن بخش */
+  align-items: center; 
+  margin: 0 auto; 
   text-align: center;
   font-size: 0.9rem;
 }
 
 .footer-bottom > * {
-  text-align: center; /* برای اینکه هر بخش داخل را وسط‌چین کند */
+  text-align: center; 
 }
 
 
@@ -518,10 +517,10 @@ ul li span:last-child {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
-  padding: 5px 15px; /* کاهش اندازه دکمه */
+  padding: 5px 15px; 
   border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem; /* کاهش اندازه فونت دکمه */
+  font-size: 0.9rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -532,12 +531,12 @@ ul li span:last-child {
 
 /* Spacing between sections */
 .footer-content > div {
-  margin-bottom: 10px; /* کاهش فاصله بین بخش‌ها */
+  margin-bottom: 10px; 
 }
 
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    gap: 15px; /* کاهش فاصله بین بخش‌ها در دستگاه‌های کوچک‌تر */
+    gap: 15px;
   }
 }
