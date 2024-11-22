@@ -10,7 +10,13 @@
     font-style: normal;
   }
 /* --------------------navbar-------------------- */
-
+.font-size {
+  font-size: 22px;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
 
 
  /* --------------------Home--------------------  */
@@ -206,6 +212,7 @@ h1 span {
 p.description {
   color: #666;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .steps {
@@ -223,9 +230,9 @@ p.description {
   border-radius: 10px;
   padding: 20px;
   width: 220px; 
+  margin-bottom: 80px;
   text-align: left;
   position: relative;
-  transition: transform 0.3s ease;
 }
 
 
@@ -287,6 +294,10 @@ color: orange;
 
 
 /* --------------------contact-------------------- */
+.let-section{
+  margin-left: 30px;
+  margin-top: 30px;
+}
 
 .container4 {
   max-width: 1300px; 
@@ -298,7 +309,7 @@ color: orange;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -324,13 +335,16 @@ ul li {
   align-items: center;
   margin-bottom: 15px;
   font-size: 1rem;
-  color: #555;
+  color: #4c6ef5;
+}
+.main-social {
+  margin-top: 50px;
 }
 .social a {
  display: inline-block;
  font-size: 27px;
  padding: 15px 5px 10px 20px;
- color: #333;
+ color: #4c6ef5;
 }
 
 ul li span:first-child {
@@ -348,7 +362,7 @@ ul li span:last-child {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .conactForm h2 {
@@ -363,13 +377,12 @@ ul li span:last-child {
   gap: 15px;
 }
 
-.conactForm input,
-.conactForm textarea {
+.conactForm input ,textarea {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
   transition: border-color 0.3s ease;
 }
@@ -389,7 +402,7 @@ ul li span:last-child {
   background-color: #4c6ef5;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -402,6 +415,7 @@ ul li span:last-child {
 /* --------------------Footer-------------------- */
 
 .footer {
+  border-radius: 10px 10px 0px 0px;
   margin-top: 120px;
   background-color: #4c6ef5;
   color: #fff;
@@ -509,8 +523,9 @@ ul li span:last-child {
   color: #fff;
   border: 1px solid #fff;
   padding: 5px 15px; 
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
   font-size: 0.9rem;
   transition: background-color 0.3s, color 0.3s;
 }
