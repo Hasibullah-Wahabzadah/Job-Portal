@@ -377,7 +377,7 @@ ul li span:last-child {
 }
 
 .conactForm input:focus, textarea:focus {
-  border-color: #007bff;
+  border-color: #4c6ef5;
 }
 
 .conactForm textarea {
@@ -388,7 +388,7 @@ ul li span:last-child {
 .conactForm button {
   padding: 10px 15px;
   font-size: 1rem;
-  background-color: #007bff;
+  background-color: #4c6ef5;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -397,5 +397,147 @@ ul li span:last-child {
 }
 
 .conactForm button:hover {
-  background-color: #0056b3;
+  background-color: #4c6ef5;
+}
+
+
+/* Footer */
+
+/* Footer styles */
+.footer {
+  background-color: #3B3BE8;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+/* Main content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px; /* کاهش فاصله بین ستون‌ها */
+  max-width: 1200px; /* محدود کردن عرض برای نزدیک‌تر کردن بخش‌ها */
+  margin: 0 auto; /* مرکز کردن محتوا */
+}
+
+.footer-logo {
+  flex: 2;
+  max-width: 300px;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  display: inline-block;
+  background-color: #fff;
+  color: #3B3BE8;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-links {
+  flex: 1;
+  max-width: 180px; /* کاهش عرض برای نزدیک‌تر شدن ستون‌ها */
+}
+
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px; /* کاهش فاصله زیر تیترها */
+  font-weight: bold;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px; /* کاهش فاصله بین آیتم‌های لیست */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+.footer-contact {
+  flex: 1;
+  max-width: 180px; /* کاهش عرض برای تراز بهتر */
+}
+
+.footer-contact p {
+  margin-bottom: 8px; /* کاهش فاصله بین خطوط */
+  font-size: 1rem;
+}
+
+.footer-divider {
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  max-width: 1200px; /* عرض محدود مشابه container */
+  margin: 10px auto; /* مرکز کردن خط */
+}
+
+.footer-bottom {
+  max-width: 1200px; /* عرض محدود مشابه container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* اضافه کردن جهت عمودی برای تراز کردن محتوا */
+  margin: 0 auto; /* وسط‌چین کردن بخش */
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-bottom > * {
+  text-align: center; /* برای اینکه هر بخش داخل را وسط‌چین کند */
+}
+
+
+.back-to-top {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 15px; /* کاهش اندازه دکمه */
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem; /* کاهش اندازه فونت دکمه */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #fff;
+  color: #3B3BE8;
+}
+
+/* Spacing between sections */
+.footer-content > div {
+  margin-bottom: 10px; /* کاهش فاصله بین بخش‌ها */
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 15px; /* کاهش فاصله بین بخش‌ها در دستگاه‌های کوچک‌تر */
+  }
 }
