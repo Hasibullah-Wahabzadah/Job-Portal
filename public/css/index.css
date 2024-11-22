@@ -10,11 +10,9 @@
     font-style: normal;
   }
 /* --------------------navbar-------------------- */
-ul , li ,a {
-  font-size: 22px;
-  gap: 9px;
 
-}
+
+
  /* --------------------Home--------------------  */
  
 .searchBox {
@@ -31,7 +29,7 @@ ul , li ,a {
 
 
 body {
-  font-family: Arial, sans-serif;
+
   background-color: #f7f7f7;
 }
 
