@@ -49,53 +49,40 @@ body {
 
 /* --------------------About-------------------- */
 
-.container2 {
+.containers {
   display: flex;
   justify-content: center;
-  padding: 20px;
-  margin-top: 120px;
-}
-
-.job-portal-section {
-  display: flex;
   align-items: center;
-  background-color: #4c6ef5;
-  color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 1300px;
-}
-
-.image {
-  flex: 1;position: relative;
-  display: flex;
-  padding: 0px;
-}
-
-.image img {
-  max-width: 100%;
-  border-radius: 10px;
-
-  
+  margin-top: 250px;
+  margin-bottom: 250px;
 }
 
 .content {
+  display: flex;
+  align-items: center;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  height: 330px;
+  color: white;
+  max-width: 1300px;
+  width: 90%;
+  position: relative; 
+}
+
+.text-section {
   flex: 1;
-  padding: 20px;
-  
+  margin-right: 20px;
 }
 
-.content h2 {
-  font-size: 43px;
-  margin-bottom: 20px;
+.text-section h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
 }
 
-.content p {
+.text-section p {
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 1.5;
-
 }
 
 .buttons {
@@ -103,32 +90,85 @@ body {
   gap: 10px;
 }
 
-.button3 {
+.btns {
+  text-decoration: none;
   padding: 10px 20px;
-  font-size: 14px;
-  color: #4c6ef5;
-  background-color: white;
   border: none;
   border-radius: 5px;
+  font-size: 14px;
   cursor: pointer;
-  text-decoration: none;
 }
 
-.button3:hover {
-  background-color: #e5e7eb;
+.post-job {
+  background-color: white;
+  color: #0d6efd;
 }
+
+.sign-up {
+  background-color: #0d6efd;
+  color: white;
+  border: 1px solid white;
+}
+
+.image-section {
+  flex: 1;
+  position: relative; 
+}
+
+.image-section img {
+  max-width: 110%;
+  border-radius: 10px;
+  position: absolute; 
+  top: -342px; 
+  right: 85px; 
+  z-index: 10; 
+}
+
 
 @media (max-width: 768px) {
-  .job-portal-section {
-    flex-direction: column;
-    text-align: center;
+  .content {
+    flex-direction: column; 
+    height: 530px;
+    margin-top: 80px;
   }
-  
+
+  .image-section {
+    order: -1; 
+    text-align: center; 
+    margin-bottom: 20px;
+   
+  }
+
+  .image-section img {
+    position: relative;
+    top: -100px;
+    right: 0;
+    max-width: 100%; 
+  }
+
+  .text-section {
+    text-align: center;
+    margin: 0;
+    margin-top: -100px;
+  }
+
+  .text-section h1 {
+    font-size: 24px;
+  }
+
+  .text-section p {
+    font-size: 14px;
+  }
+
+  .btns {
+    font-size: 12px;
+    padding: 9px 15px;
+  }
   .buttons {
     justify-content: center;
   }
+  
 }
-
 
 
 /* --------------------Button-------------------- */
@@ -218,7 +258,7 @@ body {
 }
 
 h1 span {
-  color: #4c6ef5;
+  color: #0d6efd;
 }
 
 p.description {
@@ -348,7 +388,7 @@ color: orange;
   align-items: center;
   margin-bottom: 15px;
   font-size: 1rem;
-  color: #4c6ef5;
+  color: #0d6efd;
 }
 .main-social {
   margin-top: 50px;
@@ -357,11 +397,11 @@ color: orange;
  display: inline-block;
  font-size: 27px;
  padding: 15px 5px 10px 20px;
- color: #4c6ef5;
+ color: #0d6efd;
 }
 
 .lest-content ul li span:first-child {
-  color: #4c6ef5;
+  color: #0d6efd;
   font-size: 1.5rem;
   margin-right: 10px;
 }
@@ -401,7 +441,7 @@ color: orange;
 }
 
 .conactForm input:focus, textarea:focus {
-  border-color: #4c6ef5;
+  border-color: #0d6efd;
 }
 
 .conactForm textarea {
@@ -412,7 +452,7 @@ color: orange;
 .conactForm button {
   padding: 10px 15px;
   font-size: 1rem;
-  background-color: #4c6ef5;
+  background-color: #0d6efd;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -421,7 +461,7 @@ color: orange;
 }
 
 .conactForm button:hover {
-  background-color: #4c6ef5;
+  background-color: #0d6efd;
 }
 
 
@@ -430,7 +470,7 @@ color: orange;
 .footer {
   border-radius: 10px 10px 0px 0px;
   margin-top: 120px;
-  background-color: #4c6ef5;
+  background-color: #0d6efd;
   color: #fff;
   padding: 40px 20px;
 }
@@ -545,7 +585,7 @@ color: orange;
 
 .back-to-top:hover {
   background-color: #fff;
-  color: #4c6ef5;
+  color: #0d6efd;
 }
 
 .footer-content > div {
