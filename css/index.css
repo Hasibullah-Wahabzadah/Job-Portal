@@ -1,14 +1,19 @@
+/* --------------------font--------------------  */
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500; 
+  font-size: 16px;  
+  line-height: 1.6; 
+  margin: 0;
+  padding: 0;
+}
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* --------------------font--------------------  */
-.roboto-medium {
-    font-family: "Roboto", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
 /* --------------------navbar-------------------- */
 .font-size {
   font-size: 22px;
@@ -30,14 +35,19 @@
       background: url(../images/Group\ 1126.svg) 640px no-repeat border-box ;
 }
 
+/* --------------------Job Section-------------------- */
+
+.font-job{
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .font-job{
+    font-size: 2rem;
+  }
+}
+
 
 /* --------------------About-------------------- */
-
-
-body {
-
-  background-color: #f7f7f7;
-}
 
 .container2 {
   display: flex;
@@ -49,7 +59,7 @@ body {
 .job-portal-section {
   display: flex;
   align-items: center;
-  background-color: #4c6ef5; /* Blue background */
+  background-color: #4c6ef5;
   color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -73,17 +83,19 @@ body {
 .content {
   flex: 1;
   padding: 20px;
+  
 }
 
 .content h2 {
-  font-size: 44px;
-  margin-bottom: 10px;
+  font-size: 43px;
+  margin-bottom: 20px;
 }
 
 .content p {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.5;
+
 }
 
 .buttons {
@@ -200,9 +212,9 @@ body {
   
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.font-step{
+  font-size: 3rem;
+  margin-bottom: 5px;
 }
 
 h1 span {
@@ -229,7 +241,8 @@ p.description {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 20px;
-  width: 220px; 
+  width: 230px; 
+  height: 240px;
   margin-bottom: 80px;
   text-align: left;
   position: relative;
@@ -246,7 +259,7 @@ p.description {
 
 .step-icon {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   
 }
 .icon1{
@@ -275,8 +288,8 @@ color: orange;
 
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
+  .font-step {
+    font-size: 2rem;
   }
 
   .steps {
@@ -325,12 +338,12 @@ color: orange;
   color: #333;
 }
 
-ul {
+.lest-content ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
+.lest-content ul li {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -347,13 +360,13 @@ ul li {
  color: #4c6ef5;
 }
 
-ul li span:first-child {
-
+.lest-content ul li span:first-child {
+  color: #4c6ef5;
   font-size: 1.5rem;
   margin-right: 10px;
 }
 
-ul li span:last-child {
+.lest-content ul li span:last-child {
   font-size: 1rem;
   color: #333;
 }
@@ -362,7 +375,7 @@ ul li span:last-child {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+ 
 }
 
 .conactForm h2 {

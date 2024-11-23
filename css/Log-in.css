@@ -1,4 +1,12 @@
-
+/* --------------------font--------------------  */
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500; 
+  font-size: 16px;  
+  line-height: 1.6; 
+  margin: 0;
+  padding: 0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +14,6 @@
   }
   
   body {
-    font-family: sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,9 +39,10 @@
   }
   
   .left-section .illustration {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 60px;
     max-width: 1200px;
-    margin-left: 90px;
+    margin-left: 110px;
   }
   
   /* Right Section */
@@ -58,26 +64,28 @@
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
+    margin-right: 50px;
   }
   
   .right-section .content {
     width: 100%;
-    max-width: 400px;
+    max-width: 402px;
     margin: auto;
   }
   
   .right-section h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
   }
   
   .right-section p {
-    margin-bottom: 20px;
+    
+    font-size: 18px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     color: #666;
   }
   
@@ -103,7 +111,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   .right-section .options input {
@@ -125,6 +133,7 @@
     border: none;
     border-radius: 5px;
     font-size: 1rem;
+    margin-top: 2px;
     margin-bottom: 15px;
     cursor: pointer;
   }
