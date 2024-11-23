@@ -1,6 +1,16 @@
 body {
   background-color: #f7f7f7;
 }
+/* Navbar */
+.font-size {
+  font-size: 22px;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+/*  */
 .container1 {
   width: 100%;
   max-width: 1300px;
@@ -48,7 +58,7 @@ body {
 }
 
 .title {
-    text-align: center;
+    /* text-align: center; */
     font-size: 35px;
     margin-top: 30px;
     margin-bottom: 30px;

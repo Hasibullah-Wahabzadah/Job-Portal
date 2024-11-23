@@ -29,7 +29,7 @@
   </head>
   <body style="background-color: whitesmoke">
 <!-- Navbar Section -->
-    <div class="container mt-2">
+<div class="container mt-2">
       <nav class="navbar navbar-expand-lg bg-primary rounded-3 px-3 py-2 fixed">
         <div class="container-fluid">
           <a
@@ -71,7 +71,7 @@
                 <a class="font-size" href="#service">Service</a>
               </li>
               <li class="nav-item">
-                <a class="font-size" href="#service">Content</a>
+                <a class="font-size" href="#content">Content</a>
               </li>
             </ul>
             <ul class="navbar-nav">
@@ -172,7 +172,7 @@
 </div>
 
 <!-- About Section -->
-<div class="container2">
+<div class="container2" id="about">
   <div class="job-portal-section">
     <div class="image">
       <img src="/public/images/photo2.svg" alt="Person with Laptop">
@@ -181,15 +181,15 @@
       <h2>Trusted & Popular Job Portal</h2>
       <p>We are a bridge between job seekers and employers. Our goal is to facilitate the recruitment and job search process using smart tools and modern technologies. By providing the best job opportunities, we help promote a culture of work in the community.</p>
       <div class="buttons">
-        <button class="button3">Post a Job</button>
-        <button class="button3">Sign Up</button>
+        <a class="button3" href="#">Post a Job</a>
+        <a class="button3" href="/public/Log-in.html">Sign Up</a>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Services Section -->
-<div class="container3">
+<div class="container3" id="service">
   <h1>Get Hired in <span>4 Quick Easy Steps</span></h1>
   <p class="description">The quickest and most effective way to get hired by the top firm working in your career interest areas.</p>
 
@@ -219,7 +219,7 @@
 
 
 <!-- Contact Section -->
-<section class="container4">
+<section class="container4" id="content">
   <div class="let-section">
     <div>
       <h2 >Let&apos;s get in touch with us:</h2>
@@ -288,9 +288,10 @@
       <h3>Quick Links</h3>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Service</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#content">Content</a></li>
       </ul>
     </div>
 
