@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const jobId = urlParams.get('id');
 
 async function loadJobDetails() {
-    const response = await fetch('/public/jobs.json');
+    const response = await fetch('../jobs.json');
     const jobsData = await response.json();
     const job = jobsData.find(j => j.id === jobId);
 
