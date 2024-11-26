@@ -12,159 +12,136 @@
 <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap icons v5.2.1 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"/>
+    
   </head>
   <body style="background-color: whitesmoke">
 <!-- Navbar Section -->
-<div class="container mt-2">
-      <nav class="navbar navbar-expand-lg bg-primary rounded-3 px-3 py-2 fixed">
-        <div class="container-fluid">
-          <a
-            class="navbar-brand text-white fw-bold d-flex align-items-center"
-            href="#"
-          >
-            <img
-              src="./images/logo.svg"
-              alt="JobHuntly Logo"
-              width="30"
-              height="30"
-              class="me-2"
-            />
-            JobHuntly
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto ">
-              <li class="nav-item">
-                <a class="font-size " href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="font-size" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="font-size" href="#jobs">Jobs</a>
-              </li>
-              <li class="nav-item">
-                <a class="font-size" href="#service">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="font-size" href="#content">Content</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="btn text-white me-2 border" href="./Log-in.html">Log in</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-light text-primary rounded px-3" href="#"
-                  >Post a Job</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<div class="container-n">
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./images/logo.svg"
+          alt="JobHuntly Logo"
+          width="30"
+          height="30"
+          class="brand-logo"
+        />
+        JobHuntly
+      </a>
+      <button class="navbar-toggler" id="navbar-toggler">
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#jobs">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#content">Content</a>
+          </li>
+        </ul>
+        <ul class="navbar-actions">
+            <a class="btn-login" href="./Log-in.html">Log in</a>
+            <a class="btn-post" href="#">Post a Job</a>
+        </ul>
+      </div>
     </div>
+  </nav>
+</div>
+
 
 <!-- Home Section -->
 <section class="intro" id="home">
-  <div class="container my-4">
-    <div class="row align-items-center">
-      <div class="col-lg-8  text-lg-start">
-        <h1 class="fw-bold display-1">
-          GET THE RIGHT JOB <br />
-          YOU <span class="text-primary">DESERVE</span>
-        </h1>
-        <p class="text-muted mt-5">
+  <div class="container-h">
+    <div class="row">
+      <!-- Text Section -->
+      <div class="col text-section">
+        <h2 class="titless">
+          GET THE RIGHT JOB
+          YOU <span class="highlight">DESERVE</span>
+        </h2>
+        <p class="subtitle">
           Great platform for job seekers looking for new career heights and passionate about startups.
         </p>
         <!-- Search Box -->
-        <div class="input-group mt-5 p-3 searchBox rounded" style="max-width: 640px; width: 100%">
-          <span class="input-group-text bg-white border-0"><i class="bi bi-search"></i></span>
-          <input type="text" class="form-control border-0" placeholder="Search jobs..." />
-          <button class="btn btn-primary rounded btn-lg">Search</button>
+        <div class="search-box">
+          <span class="search-icon"><i class="bi bi-search"></i></span>
+          <input type="text" class="search-input" placeholder="Search jobs..." />
+          <button class="search-button">Search</button>
         </div>
       </div>
       <!-- Image Section -->
-      <div class="col-lg-4 text-center">
-        <img src="./images/photo.svg" alt="Person Image" class="img-fluid d-none d-sm-block" />
+      <div class="col image-section">
+        <img src="./images/photo.svg" alt="Person Image" class="image" />
       </div>
     </div>
     <!-- Statistics Section -->
-    <div class="row text-center mt-4 py-2 bg-primary rounded">
-      <div class="col-6 col-md-3 border-end border-white">
-        <div class="text-white p-4">
-          <h3>3000+</h3>
-          <p>Live Jobs</p>
-        </div>
+    <div class="stats-row">
+      <div class="stat">
+        <h3>3000+</h3>
+        <p>Live Jobs</p>
       </div>
-      <div class="col-6 col-md-3 border-end border-white">
-        <div class="text-white p-4">
-          <h3>5000+</h3>
-          <p>Daily Job Posts</p>
-        </div>
+      <div class="stat">
+        <h3>5000+</h3>
+        <p>Daily Job Posts</p>
       </div>
-      <div class="col-6 col-md-3 border-end border-white">
-        <div class="text-white p-4">
-          <h3>34000+</h3>
-          <p>People Hired</p>
-        </div>
+      <div class="stat">
+        <h3>34000+</h3>
+        <p>People Hired</p>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="text-white p-4">
-          <h3>1000+</h3>
-          <p>Companies</p>
-        </div>
+      <div class="stat">
+        <h3>1000+</h3>
+        <p>Companies</p>
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- Job Section -->
-<div class="container my-5" id="jobs">
+<div class="container-j" id="jobs">
   <!-- Title and Subtitle -->
-  <div class="text-center mb-5">
-    <h2  class="mb-4 font-job">Job <span class="text-primary">Opportunities.</span></h2>
-    <p class="mb-4">To view and apply for your desired job, select a category and then click on apply.</p>
+  <div class="text-center ">
+    <h2 class="title">
+      Job <span class="highlight">Opportunities.</span>
+    </h2>
+    <p class="subtitle">
+      To view and apply for your desired job, select a category and then click on apply.
+    </p>
   </div>
   <!-- Buttons -->
-  <div class="row mb-5 mt-5">
-    <div class="col-12 d-flex flex-wrap justify-content-center gap-2">
-      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('all')">All</button>
-      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('software')">Software</button>
-      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('database')">Database</button>
-      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('ui-ux')">UI - UX</button>
-      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('frontend')">Frontend</button>
-      <button class="btn btn-primary col-3 col-md-1" onclick="filterJobs('backend')">Backend</button>
-    </div>
+  <div class="button-group">
+    <button class="button" onclick="filterJobs('all')">All</button>
+    <button class="button" onclick="filterJobs('software')">Software</button>
+    <button class="button" onclick="filterJobs('database')">Database</button>
+    <button class="button" onclick="filterJobs('ui-ux')">UI - UX</button>
+    <button class="button" onclick="filterJobs('frontend')">Frontend</button>
+    <button class="button" onclick="filterJobs('backend')">Backend</button>
   </div>
   <!-- List Jobs -->
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="job-list">
+  <div class="job-list" id="job-list">
     <!-- Dynamic job cards will be added here -->
   </div>
   <!-- Show More Button -->
-  <div class="text-center mt-4">
-    <button id="show-more-btn" class="btn btn-primary mt-5" onclick="showMoreJobs()">Show more</button>
+  <div class="text-center">
+    <button id="show-more-btn" class="show-more" onclick="showMoreJobs()">Show more</button>
   </div>
 </div>
+
 
 <!-- About Section -->
 <div class="containers">
@@ -326,15 +303,13 @@
 </footer>
 
 
+<script>
+  document.getElementById('navbar-toggler').addEventListener('click', () => {
+  document.getElementById('navbarNav').classList.toggle('active');
+});
+</script>
+
+
 <script src="./js/script.js"></script>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"></script>
   </body>
 </html>

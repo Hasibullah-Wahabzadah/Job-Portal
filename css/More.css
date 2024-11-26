@@ -16,8 +16,171 @@ body {
   color: white;
   text-decoration: none;
 }
+.container-n {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
-/*  */
+.navbar {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  position: sticky;
+  margin-top: 5px;
+  z-index: 1000;
+  color: white;
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.brand-logo {
+  margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  /* margin: 0; */
+}
+
+.navbar-nav {
+  flex-grow: 1;
+  display: flex;     
+  justify-content: center;      
+  /* list-style-type: none;         */
+  padding: 0;                  
+  /* margin: 0 auto;  */
+  margin-right: 220px;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #d1e7ff;
+  
+}
+
+/* Buttons */
+.navbar-actions {
+  display: flex;
+  /* align-items: center; */
+  
+}
+
+.btn-login {
+  color: white;
+  background: none;
+  border: 1px solid white;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+  background: white;
+  color: #007bff;
+}
+
+.btn-post {
+  color: #007bff;
+  background: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-post:hover {
+  background-color: #d1e7ff;
+}
+
+/* Toggler */
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggler-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    display: inline-block;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    background: #007bff;
+    border-radius: 10px;
+    margin-top: 360px;
+    width: 180px;
+    padding: 20px;
+  }
+
+  .navbar-collapse.active {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+/* page */
 .container1 {
   width: 100%;
   max-width: 1300px;
