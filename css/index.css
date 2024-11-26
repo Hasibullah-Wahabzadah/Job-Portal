@@ -383,7 +383,9 @@ body {
   margin-top: 120px;
 }
 
-
+.font-job{
+  font-size: 3rem;
+}
 
 /* Title and Subtitle */
 .title  {
@@ -456,7 +458,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .job-list {
-    grid-template-columns: 1fr; /* دو ستون در نمایشگرهای کوچک */
+    grid-template-columns: 1fr; 
   }
   .button {
     font-size: 0.9rem;
@@ -470,18 +472,12 @@ body {
   .title {
     font-size: 1.5rem;
   }
-}
-
-.font-job{
-  font-size: 3rem;
-}
-@media (max-width: 768px) {
   .font-job{
     font-size: 2rem;
   }
 }
 
-/* ///////////// */
+/* script section */
 
 .card {
   height: 100%;
